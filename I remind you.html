@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أذكرك - خدمة تذكير المرضى</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            font-family: 'Beiruti', sans-serif;
+            color: #156669;
+            background-color: #f0f4f3;
+            overflow-x: hidden;
+        }
+        .content {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .logo {
+            margin: 0 auto;
+            display: block;
+            width: 120px;
+            height: auto;
+        }
+        .section-title {
+            font-weight: 700;
+            color: #156669;
+            margin-bottom: 20px;
+        }
+        .intro-text {
+            font-size: 1.3em;
+            max-width: 700px;
+            margin: 20px auto;
+            color: #156669;
+            line-height: 1.6;
+        }
+        .network-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px 0;
+        }
+        .network-item {
+            background-color: #ffffff;
+            color: #156669;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 180px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .network-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #156669;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            color: #156669;
+            font-size: 1.8em;
+            transition: color 0.3s ease;
+        }
+        .social-icons a:hover {
+            color: #333;
+        }
+        .whatsapp-section {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #ffffff;
+        }
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-btn:hover {
+            background-color: #20b858;
+        }
+        @media (max-width: 576px) {
+            .intro-text {
+                font-size: 1.2em;
+            }
+            .network-item {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .social-icons a {
+                font-size: 1.5em;
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main Content -->
+    <div class="content">
+        <img src="logo.png" alt="شعار أذكرك" class="logo" data-aos="zoom-in">
+        <p class="intro-text" data-aos="fade-up">
+            "أذَّكـــــرك" - خدمة مبتكرة لتذكير المرضى بأخذ أدويتهم. <br>
+            "أذَّكـــــرك" هو نظام تذكير ذكي يساعد المرضى على الالتزام بمواعيد تناول أدويتهم بشكل دقيق وسهل. <br>
+            تهدف الخدمة إلى تحسين الصحة العامة للمستخدمين من خلال التذكير المتواصل والتفاعل المستمر لضمان عدم تفويت الجرعات العلاجية. <br>
+            المشروع مصمم لدعم الأفراد والأسر ومقدمي الرعاية الصحية.
+        </p>
+    </div>
+      <!-- Target Audience Section -->
+      <section class="target-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">الفئات المستهدفة</h2>
+            <div class="network-line">
+                <div class="network-item" data-aos="fade-up">
+                    <div class="network-icon">👨‍👩‍👧‍👦</div>
+                    <h5>العائلات</h5>
+                    <p>العائلات التي تتابع حالة أحد أفرادها الصحي.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="network-icon">💊</div>
+                    <h5>المرضى</h5>
+                    <p>المرضى الذين يحتاجون إلى تذكيرات منتظمة لأخذ الأدوية.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="network-icon">👨‍⚕️</div>
+                    <h5>الأطباء</h5>
+                    <p>الأطباء الذين يرغبون في متابعة التزام مرضاهم بخطط العلاج.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="network-icon">👴</div>
+                    <h5>كبار السن</h5>
+                    <p>كبار السن أو المرضى الذين ينسون مواعيد تناول علاجهم.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section class="features-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">أهم الميزات</h2>
+            <div class="network-line">
+                <div class="network-item" data-aos="fade-up">
+                    <div class="network-icon">🔔</div>
+                    <h5>تذكيرات متعددة</h5>
+                    <p>إرسال حتى 20 رسالة تذكيرية في حال عدم الرد، مع إمكانية تخصيص الفاصل الزمني.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="network-icon">💬</div>
+                    <h5>رسائل تحفيزية يومية</h5>
+                    <p>عبارات مشجعة تُرسل بشكل عشوائي لدعم الحالة النفسية للمريض.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="network-icon">📊</div>
+                    <h5>متابعة العلاج</h5>
+                    <p>عرض معلومات عن الدواء مثل اسمه وصورته، وتتبع الكمية المتبقية من العلاج.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="network-icon">📱</div>
+                    <h5>تحديثات لأجهزة متعددة</h5>
+                    <p>إرسال إشعارات إلى أجهزة متعددة تتيح متابعة تناول العلاج.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Features Section -->
+    <section class="future-features-section">
+        <div class="container" data-aos="fade-up">
+            <h2 class="section-title text-center">الميزات المستقبلية</h2>
+            <div class="network-line">
+                <div class="network-item" data-aos="fade-up">
+                    <div class="network-icon">📞</div>
+                    <h5>الاتصال الهاتفي التلقائي</h5>
+                    <p>ميزة للاتصال بالمريض في حال عدم الاستجابة.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="network-icon">✉️</div>
+                    <h5>رسائل SMS</h5>
+                    <p>دعم الرسائل النصية القصيرة للتذكير بالدواء.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="network-icon">🎁</div>
+                    <h5>نظام المكافآت</h5>
+                    <p>تقديم مكافآت للمستخدمين الذين يلتزمون بخطة العلاج.</p>
+                </div>
+                <div class="network-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="network-icon">📈</div>
+                    <h5>عرض رسومي للالتزام</h5>
+                    <p>توفير رسومات بيانية تعرض التزام المريض بتناول الأدوية بانتظام.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-icons">
+        <a href="https://www.tiktok.com/@YOUR_USERNAME" target="_blank"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/YOUR_USERNAME" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+    </section>
+
+    <!-- WhatsApp Contact Section -->
+    <section class="whatsapp-section">
+        <p>للاستفسار أو لمزيد من المعلومات، تواصل معنا عبر واتساب:</p>
+        <a href="https://wa.me/0568644169" target="_blank">
+            <button class="whatsapp-btn">تواصل عبر واتساب</button>
+        </a>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+</html>
